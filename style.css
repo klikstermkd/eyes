@@ -1,0 +1,155 @@
+
+body { background: url('bg.png') repeat scroll 0 0 transparent; }
+
+#eye-left, #eye-right {
+   width: 100px;
+   height: 100px;
+   margin: 0 auto;
+   background-image: -webkit-gradient(radial, 80 80, 0, center center, 80, from(#ffffff), to(#DEDEDE));
+   background-image: -moz-radial-gradient(center 45deg, circle closest-corner, #ffffff 0%, #DEDEDE 100%);
+    
+   -webkit-box-shadow: 0px 0px 5px 1px black;
+           box-shadow: 0px 0px 5px 1px black;
+
+   -webkit-border-radius: 170px 15px;
+           border-radius: 170px 15px;
+   
+   -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+   
+   -webkit-transition: border-radius .3s, cursor .3s;
+      -moz-transition: border-radius .3s, cursor .3s;
+}
+
+#eye-left {
+   position: relative;
+   top: 150px;
+   right: 100px; 
+   
+   -webkit-animation: eye-left 1s 1s ease-out;
+      -moz-animation: eye-left 1s 1s ease-out;
+}
+
+@-webkit-keyframes eye-left {
+   0%   { border-radius: 170px 15px; }
+   70%  { border-radius: 500px 15px; top: 156px; right: 94px; -webkit-box-shadow: 4px 0px 15px 1px black; box-shadow: 4px 0px 15px 1px black; }
+   100% { border-radius: 170px 15px; } 
+}
+
+@-moz-keyframes eye-left {
+   0%   { border-radius: 170px 15px; }
+   70%  { border-radius: 500px 15px; top: 156px; right: 94px; -webkit-box-shadow: 4px 0px 15px 1px black; box-shadow: 4px 0px 15px 1px black; }
+   100% { border-radius: 170px 15px; }
+}
+
+#eye-right {
+   position: relative;
+   top: 49px;
+   right: -80px;     
+   
+   -webkit-animation: eye-right 1s 1s ease-out;
+      -moz-animation: eye-right 1s 1s ease-out;
+}
+
+@-webkit-keyframes eye-right {
+   0%   { border-radius: 170px 15px; }
+   70%  { border-radius: 500px 15px; top: 55px; right: -74px; -webkit-box-shadow: 0px 4px 15px 1px black; box-shadow: 0px 4px 15px 1px black; }
+   100% { border-radius: 170px 15px; }
+}
+
+@-moz-keyframes eye-right {
+   0%   { border-radius: 170px 15px; }
+   70%  { border-radius: 500px 15px; top: 55px; right: -74px; -webkit-box-shadow: 0px 4px 15px 1px black; box-shadow: 0px 4px 15px 1px black; }
+   100% { border-radius: 170px 15px; }
+}
+
+#eye-left:hover, #eye-right:hover {
+   cursor: pointer;
+   -webkit-border-radius: 60px 15px;
+           border-radius: 60px 15px;
+}
+
+#iris-left, #iris-right {
+   width: 50px;
+   height: 50px;
+   position: relative;
+   top: 25px;
+   left: 25px;
+   background-image: -webkit-gradient(radial, 22 22, 28, 24 22, 0, from(rgb(64, 64, 64)), color-stop(0.3, rgb(51, 136, 221)), to(rgb(153, 187, 255)));
+   background-image: -moz-radial-gradient(center 45deg, circle closest-corner, #ffffff 0%, rgb(51, 136, 221) 100%);
+   
+   -webkit-border-radius: 50px;
+           border-radius: 50px; 
+}
+
+#iris-left {  
+   -webkit-animation: iris-left 1s 1s ease-in;
+      -moz-animation: iris-left 1s 1s ease-in;
+}
+
+@-webkit-keyframes iris-left {
+   0%   { top: 25px; left: 25px; }
+   50%  { top: 18px; left: 34px; }
+   100% { top: 25px; left: 25px; }
+}
+
+@-moz-keyframes iris-left {
+   0%   { top: 25px; left: 25px; }
+   50%  { top: 18px; left: 34px; }
+   100% { top: 25px; left: 25px; }
+}
+
+#iris-right {
+   -webkit-animation: iris-right 1s 1s ease-in;
+      -moz-animation: iris-right 1s 1s ease-in;
+}
+
+@-webkit-keyframes iris-right {
+   0%   { top: 25px; left: 25px; }
+   50%  { top: 34px; left: 18px; }
+   100% { top: 25px; left: 25px; }
+}
+
+@-moz-keyframes iris-right {
+   0%   { top: 25px; left: 25px; }
+   50%  { top: 34px; left: 18px; }
+   100% { top: 25px; left: 25px; }
+}
+
+#blackdot-left, #blackdot-right {
+   width: 20px;
+   height: 20px;
+   position: relative;
+   top: 15px;
+   left: 15px;
+   background: rgba(0, 0, 0, 0.90);
+   
+   -webkit-border-radius: 20px;
+           border-radius: 20px;
+}
+
+#whitedot-left, #whitedot-right {
+   display: block;
+   width: 11px;
+   height: 11px;
+   z-index: 2;
+   background: rgba(255, 255, 255, 0.8);
+   
+   -webkit-border-radius: 52px;
+           border-radius: 52px;
+   
+   -webkit-box-shadow: 0 0px 5px #fff;
+           box-shadow: 0 0px 5px #fff;
+}
+
+#whitedot-left {
+   position: absolute;
+   top: 13px;
+   left: 19px;
+}
+
+#whitedot-right {
+   position: absolute;
+   top: 19px;
+   left: 13px;
+}
