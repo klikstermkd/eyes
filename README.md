@@ -1,4 +1,1 @@
-eyes
-====
-
-Eyes animation using CSS3
+Hover over an eye to animate.
